@@ -133,7 +133,7 @@ class Themes
     public function add(Theme $theme)
     {
         if ($this->exists($theme->name)) {
-            throw new Exceptions\themeAlreadyExists($theme);
+            return $theme;
         }
         $this->themes[] = $theme;
         return $theme;

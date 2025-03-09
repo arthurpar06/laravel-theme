@@ -14,7 +14,9 @@ class baseCommand extends Command
     protected $files;
 
     /**
-     * The temp path
+     * The package tmp path.
+     *
+     * @var string
      */
     protected $tempPath;
 

@@ -18,7 +18,7 @@ class Theme
     /** @var \Igaster\LaravelTheme\Themes */
     private $themes;
 
-    public function __construct($themeName, $assetPath = null, $viewsPath = null, Theme $parent = null)
+    public function __construct($themeName, $assetPath = null, $viewsPath = null, ?Theme $parent = null)
     {
         $this->themes = resolve('igaster.themes');
 
